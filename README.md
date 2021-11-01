@@ -1,4 +1,4 @@
-# capstone
+# Capstone
 # NewsArticalClassifier
 
 #### IIITH Final project *( By Swati Surampudi and Oggu Rachana)*
