@@ -1,0 +1,16 @@
+Installations:
+
+Follow the Kafka installation doc.
+
+for mongodb connector use the below link to download 
+
+https://repo1.maven.org/maven2/org/mongodb/kafka/mongo-kafka-connect/1.6.1/
+
+first file should be downloaded.
+
+Follow the below steps in solution for creating config files.
+
+https://stackoverflow.com/questions/56880527/how-to-stream-data-from-kafka-to-mongodb-by-kafka-connector
+
+#rapidapi login
+https://rapidapi.com/collection/list-of-free-apis

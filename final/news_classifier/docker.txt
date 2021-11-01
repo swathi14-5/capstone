@@ -1,0 +1,5 @@
+docker build --pull --rm -f "Dockerfile" -t newsclassifier:latest "."
+
+docker run --name newsclassifier_container -p 5000:5000 newsclassifier:latest
+
+docker start newsclassifier_container

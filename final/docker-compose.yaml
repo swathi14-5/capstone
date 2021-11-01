@@ -1,0 +1,14 @@
+#before running the docker-compose up use docker-compose rm -svf
+version: '3'
+services:
+
+  model-news_classifier:
+    deploy:
+      replicas: 1
+    build: news_classifier
+    container_name: model-news_classifier_container
+    environment:
+      - PREDICTR_ENDPOINT=http://news_classifier:5000
+    ports:
+      - "5000:5000"
+

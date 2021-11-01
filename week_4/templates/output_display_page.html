@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+    <title>output_page</title>
+    <style>
+      h1 {
+      color: rgb(17, 16, 16);
+      font-size: 70px;
+      margin: 0px;
+     
+    }
+    
+        
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-light bg-warning">
+    <div class="row">
+      <div class="col-sm-5">
+    <a class="navbar-brand" href="#">
+      <img src="/static/images/Great_Learning_Logo.jpg" width="150px" height="100px" class="" alt="Great_Learning_Logo">
+   
+      <img src="/static/images/iiit_logo.png" width="150px" height="100px" class="" alt="IIIT_Logo">
+      </a></div>
+      
+       <h1 class="text-dark display-3 text-left">News Predictor </h1></div>
+    
+  </nav>
+  <div class="row">
+    <div class="col-sm-3"></div>
+
+    <div class="col-sm-6 jumbotron bg-light">
+<form action="/prediction" method="post" id="form1"></form>
+<div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text">
+Enter the News description:
+    </span>
+</div>
+<input type="text" name="summary_text"  form="form1" class="form-control" placeholder="enter text">
+</input>
+</form>
+<button type="submit" form="form1" value="Submit">Classify</button>
+</div>
+<h2>{{output}}</h2>
+<p>Text entered is : {{Text_recieved}}</p>
+</div>
+
+<div class="col-sm-3"></div>
+</div>
+</body>
+</html>

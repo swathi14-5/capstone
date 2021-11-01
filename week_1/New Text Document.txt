@@ -1,0 +1,24 @@
+Path:cd D:\kafka\bin\windows
+#run terminals here
+
+ter-1: zookeeper-server-start.bat ../../config/zookeeper.properties
+
+ter-2: kafka-server-start.bat ../../config/server.properties
+
+ter-3: kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic news
+
+	   connect-standalone.bat ../../config/connect-standalone_bare.properties ../../config/MongoSinkConnector.properties
+ter-4: kafka-console-producer.bat --broker-list localhost:9092 --topic news
+
+
+******************************************************************************************************************************
+
+MongoDB
+
+This happened probably because the MongoDB service isn't started. Follow the below steps to start it:
+
+Go to Control Panel and click on Administrative Tools.
+Double click on Services. A new window opens up.
+Search MongoDB.exe. Right click on it and select Start.
+
+*******************************************************************************************************************************

@@ -1,0 +1,5 @@
+Executing task: docker build --pull --rm -f "templates\Dockerfile" -t week4:latest "templates"
+
+docker run --name week4:latest_container -p 5000:5000 week4:latest
+
+docker start week4:latest_container
