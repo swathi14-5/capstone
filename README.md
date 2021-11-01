@@ -35,5 +35,8 @@ following stages of Machine Learning Project Life Cycle –
 ### 4.Model Deployment:
 
 - Run the docker file for web app view and predection: docker-compose up
+### 5.Application output:
+![Screenshot (159)](https://user-images.githubusercontent.com/77978493/139678018-1d98d01e-a25e-4cf5-b28a-65b52037633f.png)
+
 
 All the commands are present in commands file
