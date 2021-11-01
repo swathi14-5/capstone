@@ -23,7 +23,7 @@ following stages of Machine Learning Project Life Cycle –
 
 ### 1.Data Ingestion
 
-- Installation of kafka in local system
+- Installation of kafka in local system:https://github.com/swathi14-5/capstone/blob/master/week_1/kafka-win-install.pdf
 - Commands to run for data Ingestion:
 - Used free new API keys from https://mediastack.com/ and https://rapidapi.com/newscatcher-api-newscatcher-api-default/api/free-news/
 
