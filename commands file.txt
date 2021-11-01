@@ -1,0 +1,30 @@
+# Data ingestion(week1):
+
+terminal-1: 
+zookeeper-server-start.bat ../../config/zookeeper.properties
+
+terminal-2: 
+kafka-server-start.bat ../../config/server.properties
+
+terminal-3: to check the list of topics:
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic news #create the topic called news
+kafka-topics.bat --list --zookeeper localhost:2181  #to check the list of topics:
+connect-standalone.bat ../../config/connect-standalone_bare.properties ../../config/MongoSinkConnector.properties  #kafka mongo connector
+
+terminal-4: 
+kafka-console-producer.bat --broker-list localhost:9092 --topic news  # producer terminal
+
+#Once all the 4 terminals are running the producer_week1.py file in any cmd prompt
+
+python producer_week1.py
+
+
+#Data Processing and training( week 2 and week 3)
+
+python data.py
+
+
+#NewsPridctor
+
+docker-compose up
+
